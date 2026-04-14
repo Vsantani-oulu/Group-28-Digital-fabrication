@@ -4,14 +4,16 @@ from utime import sleep
 
 class COMPONENTS():
     BUTTON = Pin(14, Pin.IN, Pin.PULL_DOWN)
+    LED = Pin("LED", Pin.OUT)
 
 def Single_Press(count):
     print("SIGNLE PRESS")
     return count
 
-def Double_Press(count):
+def Double_Press(components):
     print("DOUBLE PRESS")
-    return count
+    components.LED.toggle()
+    return
     
 def main():
     Button_Reset = True
@@ -30,7 +32,7 @@ def main():
                             Second_Press = True
                             break
             if Second_Press:
-                Double_Press(1)
+                Double_Press(COMPONENTS)
             else:
                 Single_Press(1)
             sleep(1)

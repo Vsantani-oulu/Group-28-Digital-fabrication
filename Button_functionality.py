@@ -1,5 +1,5 @@
 from machine import Pin
-from utime import sleep
+from utime import sleep,ticks_ms , ticks_diff
 
 class COMPONENTS():
     BUTTON = Pin(14, Pin.IN, Pin.PULL_DOWN)
@@ -13,6 +13,7 @@ def Single_Press(components, count):
         components.BUZZER.value(1)
         sleep(0.1)
         components.BUZZER.value(0)
+        sleep(0.1)
     #TODO 
     #1.figure out how long to keep the motor on  
     #2.add in the second motor that locks/unlocks the drawer
@@ -21,9 +22,14 @@ def Single_Press(components, count):
 def Double_Press(components, count):
     count = 0
     components.LED.value(0)
-    sleep(3)
+    sleep(0.3)
     components.LED.value(1)
     return count
+
+def waitforrelease():
+    # So that if the user is pressing the button for more than 1 second this will make sure that pico counts it as a single press
+    while COMPONENTS.BUTTON.value() == 1:
+        sleep(0.01)
     
 def main():
     count = 0

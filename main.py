@@ -1,11 +1,11 @@
 from machine import Pin
 import utime
 from utime import sleep
-
+count=0
 class COMPONENTS():
     BUTTON = Pin(14, Pin.IN, Pin.PULL_DOWN)
     LED = Pin("LED", Pin.OUT)
-
+        
 def Single_Press(count):
     print("SIGNLE PRESS")
     return count
@@ -14,6 +14,10 @@ def Double_Press(components):
     print("DOUBLE PRESS")
     components.LED.toggle()
     return
+
+def wait_for_release():
+    while COMPONENTS.BUTTON.value() == 1:
+        sleep(0.01)
     
 def main():
     Button_Reset = True
@@ -21,8 +25,9 @@ def main():
     while True:
         if COMPONENTS.BUTTON.value()==1 and Button_Reset:
             print("click")
-            First_press_time_break = utime.time()+3
             Button_Reset = False
+            wait_for_release()
+            First_press_time_break = utime.time()+3
             while utime.time()<First_press_time_break and not Second_Press:
                 if COMPONENTS.BUTTON.value()==0:
                     while utime.time()<First_press_time_break and not Second_Press:

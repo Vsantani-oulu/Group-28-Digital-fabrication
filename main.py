@@ -3,7 +3,8 @@ import utime
 from utime import sleep
 count=0
 class COMPONENTS():
-    BUTTON = Pin(14, Pin.IN, Pin.PULL_DOWN)
+    BUTTON = Pin(3, Pin.IN, Pin.PULL_DOWN)
+    BUTTON_power = Pin(2, Pin.OUT)
     LED = Pin("LED", Pin.OUT)
         
 def Single_Press(count):
@@ -20,13 +21,13 @@ def wait_for_release():
         sleep(0.01)
     
 def main():
+    COMPONENTS.BUTTON_power.value(1)
     Button_Reset = True
     Second_Press = False
     while True:
         if COMPONENTS.BUTTON.value()==1 and Button_Reset:
             print("click")
             Button_Reset = False
-            wait_for_release()
             First_press_time_break = utime.time()+3
             while utime.time()<First_press_time_break and not Second_Press:
                 if COMPONENTS.BUTTON.value()==0:
@@ -36,6 +37,7 @@ def main():
                         if COMPONENTS.BUTTON.value()==1:
                             Second_Press = True
                             break
+            wait_for_release()
             if Second_Press:
                 Double_Press(COMPONENTS)
             else:

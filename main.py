@@ -2,7 +2,6 @@ from machine import Pin
 import utime
 from utime import sleep
 import neopixel
-import math 
 
 class COMPONENTS():
     BUTTON = Pin(3, Pin.IN, Pin.PULL_DOWN)
@@ -39,10 +38,9 @@ def Double_Press(components, count):
     return count   
 
 def Pulse(neopixel):
-    Max = False
     light = neopixel
-    Timer = utime.time()+8
-    while Timer>utime.time():
+    Timer = utime.ticks_add(utime.ticks_ms(), 4000)
+    while utime.ticks_diff(Timer, utime.ticks_ms()) > 0:
         for i in range(0, 50, 1):
             light[0] = (i*2, 0, 0)
             light.write()
@@ -55,26 +53,30 @@ def Pulse(neopixel):
     light[0] = (0, 0, 0)
     light.write()
 
+def Await_second_press():
+    First_press_break = utime.ticks_add(utime.ticks_ms(), 1000)
+    while utime.ticks_diff(First_press_break, utime.ticks_ms()) > 0:
+                if COMPONENTS.BUTTON.value()==0:
+                    while utime.ticks_diff(First_press_break, utime.ticks_ms()) > 0:
+                        print("waiting")
+                        #without this sleep a quick button click after a double click will cause another double click
+                        sleep(0.1)
+                        if COMPONENTS.BUTTON.value()==1:
+                            return True
+    return False
+
 def main():
     count = 0
     Button_Reset = True
-    Second_Press = False
     COMPONENTS.BUTTON_power.value(1)
     COMPONENTS.neopixel_power.value(1)
     while True:
         if COMPONENTS.BUTTON.value()==1 and Button_Reset:
             print("click")
-            First_press_time_break = utime.time()+1
             Button_Reset = False
-            while utime.time()<First_press_time_break and not Second_Press:
-                if COMPONENTS.BUTTON.value()==0:
-                    while utime.time()<First_press_time_break and not Second_Press:
-                        #without this sleep a quick button click after a double click will cause another double click
-                        sleep(0.1)
-                        if COMPONENTS.BUTTON.value()==1:
-                            Second_Press = True
-                            break
-            if Second_Press:
+            Second_press = Await_second_press()
+            if (Second_press):
+                print("second click")
                 count = Double_Press(COMPONENTS, count)
                 if count>20:
                     count=20
@@ -82,10 +84,8 @@ def main():
                 count = Single_Press(COMPONENTS, count)
                 if count>20:
                     count=20
-            sleep(1)
         if COMPONENTS.BUTTON.value()==0 and not Button_Reset:
             print("reset")
             Button_Reset = True
-            Second_Press = False
-
-main()
+if __name__ == "__main__":
+    main()

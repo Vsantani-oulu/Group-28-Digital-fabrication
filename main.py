@@ -37,8 +37,7 @@ def Double_Press(components, count):
 
     return count   
 
-def Pulse(neopixel):
-    light = neopixel
+def Pulse(light):
     Timer = utime.ticks_add(utime.ticks_ms(), 4000)
     while utime.ticks_diff(Timer, utime.ticks_ms()) > 0:
         for i in range(0, 50, 1):
@@ -57,12 +56,15 @@ def Await_second_press():
     First_press_break = utime.ticks_add(utime.ticks_ms(), 1000)
     while utime.ticks_diff(First_press_break, utime.ticks_ms()) > 0:
                 if COMPONENTS.BUTTON.value()==0:
-                    while utime.ticks_diff(First_press_break, utime.ticks_ms()) > 0:
-                        print("waiting")
-                        #without this sleep a quick button click after a double click will cause another double click
-                        sleep(0.1)
-                        if COMPONENTS.BUTTON.value()==1:
-                            return True
+                    sleep(0.05)
+                    if COMPONENTS.BUTTON.value()==0:
+                        while utime.ticks_diff(First_press_break, utime.ticks_ms()) > 0:
+                            print("waiting")
+                            #without this sleep a quick button click after a double click will cause another double click
+                            if COMPONENTS.BUTTON.value()==1:
+                                sleep(0.05)
+                                if COMPONENTS.BUTTON.value()==1:
+                                    return True
     return False
 
 def main():

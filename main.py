@@ -13,7 +13,6 @@ class COMPONENTS():
 
     BUZZER = Pin(14, Pin.OUT)
 
-    sensor_POWER = Pin(6, Pin.OUT)
     trigger = Pin(7, Pin.OUT, pull=0)
     echo = Pin(8, Pin.IN, pull=0)
 
@@ -45,6 +44,7 @@ def Single_Press(components, count):
             components.neopixel[i] = (0, 0, 0)
             components.neopixel.write()
     components.MOTOR_power.value(1)
+    sleep(0.1)
     motor(components, True)
     while components.BUTTON.value() == 0:
         pass
@@ -119,15 +119,16 @@ def near(max_distance, components):
 
 
 def motor(components, ON):
-    print(ON)
     if ON:
         First_press_break = utime.ticks_add(utime.ticks_ms(), 1150)
+        components.MOTOR_open.value(1)
         while utime.ticks_diff(First_press_break, utime.ticks_ms()) > 0:
-            components.MOTOR_open.value(1)
+            pass
     else:
         First_press_break = utime.ticks_add(utime.ticks_ms(), 1150)
+        components.MOTOR_close.value(1)
         while utime.ticks_diff(First_press_break, utime.ticks_ms()) > 0:
-            components.MOTOR_close.value(1)
+            pass
     components.MOTOR_open.value(0)
     components.MOTOR_close.value(0)
 
@@ -137,7 +138,6 @@ def main():
     Button_Reset = True
     COMPONENTS.BUTTON_power.value(1)
     COMPONENTS.neopixel_power.value(1)
-    COMPONENTS.sensor_POWER.value(1)
     while True:
         if (near(MAX_DISTANCE, COMPONENTS)):
             COMPONENTS.neopixel[0] = (255, 0, 0)

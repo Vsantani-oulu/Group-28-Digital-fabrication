@@ -22,29 +22,13 @@ class COMPONENTS():
 
 
 def Single_Press(components, count):
-    print("SIGNLE PRESS")
+    lights(components.neopixel, False)
+    components.neopixel.write()
     count += 1
-    print(count)
-    if count>5:
-        components.neopixel[0] = (0, 0, 0)
-        components.neopixel[1] = (0, 0, 0)
-        components.neopixel[2] = (0, 0, 0)
-        components.BUZZER.value(1)
-        sleep(1.5)
-        components.BUZZER.value(0)
-    else:
-        for i in range (0, count):
-            components.BUZZER.value(1)
-            sleep(0.1)
-            components.BUZZER.value(0)
-            sleep(0.1)
-        light_count = min(count, 3)
-        for i in range(0, light_count):
-            print(i)
-            components.neopixel[i] = (0, 0, 0)
-            components.neopixel.write()
+    Blink(components, count)
+    
     components.MOTOR_power.value(1)
-    sleep(0.1)
+    sleep(0.2)
     motor(components, True)
     while components.BUTTON.value() == 0:
         pass
@@ -77,10 +61,22 @@ def Pulse(light):
             light.write()
             sleep(0.01)
         
-    light[0] = (0, 0, 0)
-    light[1] = (0, 0, 0)
-    light[2] = (0, 0, 0)
-    light.write()
+    lights(light, False)
+
+def Blink(components, count):
+    for i in range (1, count+1):
+        light_to_turn = (i % 3)
+        if light_to_turn == 0:
+            light_to_turn = 3
+        components.neopixel[light_to_turn-1] = (255, 0, 0)
+        components.neopixel.write()
+        components.BUZZER.value(1)
+        sleep(0.2)
+        components.BUZZER.value(0)
+        sleep(0.1)
+        if i % 3 == 0:
+            lights(components.neopixel, False)
+            components.neopixel.write()
 
 def Await_second_press():
     First_press_break = utime.ticks_add(utime.ticks_ms(), 1000)
@@ -123,6 +119,11 @@ def motor(components, ON):
         First_press_break = utime.ticks_add(utime.ticks_ms(), 1150)
         components.MOTOR_open.value(1)
         while utime.ticks_diff(First_press_break, utime.ticks_ms()) > 0:
+            print("open")
+            print(components.MOTOR_open.value())
+            print("closed")
+            print(components.MOTOR_close.value())
+            sleep(0.1)
             pass
     else:
         First_press_break = utime.ticks_add(utime.ticks_ms(), 1150)
@@ -132,18 +133,28 @@ def motor(components, ON):
     components.MOTOR_open.value(0)
     components.MOTOR_close.value(0)
 
+def lights(light, ON):
+    if ON:
+        light[0] = (255, 0, 0)
+        light[1] = (255, 0, 0)
+        light[2] = (255, 0, 0)
+    else:
+        light[0] = (0, 0, 0)
+        light[1] = (0, 0, 0)
+        light[2] = (0, 0, 0)
+    light.write()
+    return
+
 def main():
     MAX_DISTANCE = 20
     count = 0
     Button_Reset = True
+    light = COMPONENTS.neopixel
     COMPONENTS.BUTTON_power.value(1)
     COMPONENTS.neopixel_power.value(1)
     while True:
         if (near(MAX_DISTANCE, COMPONENTS)):
-            COMPONENTS.neopixel[0] = (255, 0, 0)
-            COMPONENTS.neopixel[1] = (255, 0, 0)
-            COMPONENTS.neopixel[2] = (255, 0, 0)
-            COMPONENTS.neopixel.write()
+            lights(light, True)
             if COMPONENTS.BUTTON.value() == 1 and Button_Reset:
                 print("click")
                 Button_Reset = False
@@ -161,9 +172,6 @@ def main():
                 print("reset")
                 Button_Reset = True
         else:
-            COMPONENTS.neopixel[0] = (0, 0, 0)
-            COMPONENTS.neopixel[1] = (0, 0, 0)
-            COMPONENTS.neopixel[2] = (0, 0, 0)
-            COMPONENTS.neopixel.write()
+            lights(light, True)
 if __name__ == "__main__":
     main()

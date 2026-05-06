@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="90.400002mm"
+   viewBox="0 0 150.4 90.400004"
+   width="150.39999mm"
+   version="1.1"
+   id="svg51"
+   sodipodi:docname="BasedBox.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs51">
+    <linearGradient
+       id="swatch52"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop52" />
+    </linearGradient>
+    <linearGradient
+       id="swatch51"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop51" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="namedview51"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.5979779"
+     inkscape:cx="177.83061"
+     inkscape:cy="224.59775"
+     inkscape:window-width="2560"
+     inkscape:window-height="1566"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="p-4" />
+  <!--
+BasedBox - Fully closed box on a base
+
+
+This box is more of a building block than a finished item.
+Use a vector graphics program (like Inkscape) to add holes or adjust the base
+plate. The width of the "brim" can also be adjusted with the **edge_width**
+ parameter in the **Finger Joints Settings**.
+
+See ClosedBox for variant without a base.
+
+
+
+Created with Boxes.py (https://boxes.hackerspace-bamberg.de/)
+Creation date: 2026-04-29 14:23:08
+Command line (remove spaces between dashes): boxes BasedBox - -x=150 - -y=150 - -h=90 - -spacing=0.5
+Url: https://boxes.hackerspace-bamberg.de/BasedBox?FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_bottom_lip=0.0&FingerJoint_edge_width=1.0&FingerJoint_extra_length=0.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=150&y=150&h=90&outside=0&outside=1&thickness=3.0&burn=0.1&format=svg&labels=0&labels=1&reference=100.0&tabs=0.0&qr_code=0&inner_corners=loop&spacing=0.5&debug=0&language=zh_CN&render=2
+Url short: https://boxes.hackerspace-bamberg.de/BasedBox?x=150&y=150&h=90&spacing=0.5
+SettingsUrl: https://boxes.hackerspace-bamberg.de/BasedBox?FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_bottom_lip=0.0&FingerJoint_edge_width=1.0&FingerJoint_extra_length=0.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=150&y=150&h=90&outside=0&outside=1&thickness=3.0&burn=0.1&format=svg&labels=0&labels=1&reference=100.0&tabs=0.0&qr_code=0&inner_corners=loop&spacing=0.5&debug=0&language=zh_CN&render=2
+SettingsUrl short: https://boxes.hackerspace-bamberg.de/BasedBox?x=150&y=150&h=90&spacing=0.5
+-->
+  <title
+     id="title1">BasedBox</title>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:title>Box - BasedBox</dc:title>
+        <dc:date>2026-04-29 14:23:08</dc:date>
+        <dc:source>https://boxes.hackerspace-bamberg.de/BasedBox?FingerJoint_style=rectangular&amp;FingerJoint_surroundingspaces=2.0&amp;FingerJoint_bottom_lip=0.0&amp;FingerJoint_edge_width=1.0&amp;FingerJoint_extra_length=0.0&amp;FingerJoint_finger=2.0&amp;FingerJoint_play=0.0&amp;FingerJoint_space=2.0&amp;FingerJoint_width=1.0&amp;x=150&amp;y=150&amp;h=90&amp;outside=0&amp;outside=1&amp;thickness=3.0&amp;burn=0.1&amp;format=svg&amp;labels=0&amp;labels=1&amp;reference=100.0&amp;tabs=0.0&amp;qr_code=0&amp;inner_corners=loop&amp;spacing=0.5&amp;debug=0&amp;language=zh_CN&amp;render=2</dc:source>
+        <dc:source>https://boxes.hackerspace-bamberg.de/BasedBox?x=150&amp;y=150&amp;h=90&amp;spacing=0.5</dc:source>
+        <dc:description>Fully closed box on a base
+
+This box is more of a building block than a finished item.
+Use a vector graphics program (like Inkscape) to add holes or adjust the base
+plate. The width of the &quot;brim&quot; can also be adjusted with the **edge_width**
+ parameter in the **Finger Joints Settings**.
+
+See ClosedBox for variant without a base.
+
+
+Created with Boxes.py (https://boxes.hackerspace-bamberg.de/)
+Command line: boxes BasedBox --FingerJoint_style=rectangular --FingerJoint_surroundingspaces=2.0 --FingerJoint_bottom_lip=0.0 --FingerJoint_edge_width=1.0 --FingerJoint_extra_length=0.0 --FingerJoint_finger=2.0 --FingerJoint_play=0.0 --FingerJoint_space=2.0 --FingerJoint_width=1.0 --x=150 --y=150 --h=90 --outside=0 --outside=1 --thickness=3.0 --burn=0.1 --format=svg --labels=0 --labels=1 --reference=100.0 --tabs=0.0 --qr_code=0 --inner_corners=loop --spacing=0.5 --debug=0
+Command line short: boxes BasedBox --x=150 --y=150 --h=90 --spacing=0.5
+Url: https://boxes.hackerspace-bamberg.de/BasedBox?FingerJoint_style=rectangular&amp;FingerJoint_surroundingspaces=2.0&amp;FingerJoint_bottom_lip=0.0&amp;FingerJoint_edge_width=1.0&amp;FingerJoint_extra_length=0.0&amp;FingerJoint_finger=2.0&amp;FingerJoint_play=0.0&amp;FingerJoint_space=2.0&amp;FingerJoint_width=1.0&amp;x=150&amp;y=150&amp;h=90&amp;outside=0&amp;outside=1&amp;thickness=3.0&amp;burn=0.1&amp;format=svg&amp;labels=0&amp;labels=1&amp;reference=100.0&amp;tabs=0.0&amp;qr_code=0&amp;inner_corners=loop&amp;spacing=0.5&amp;debug=0&amp;language=zh_CN&amp;render=2
+Url short: https://boxes.hackerspace-bamberg.de/BasedBox?x=150&amp;y=150&amp;h=90&amp;spacing=0.5
+SettingsUrl: https://boxes.hackerspace-bamberg.de/BasedBox?FingerJoint_style=rectangular&amp;FingerJoint_surroundingspaces=2.0&amp;FingerJoint_bottom_lip=0.0&amp;FingerJoint_edge_width=1.0&amp;FingerJoint_extra_length=0.0&amp;FingerJoint_finger=2.0&amp;FingerJoint_play=0.0&amp;FingerJoint_space=2.0&amp;FingerJoint_width=1.0&amp;x=150&amp;y=150&amp;h=90&amp;outside=0&amp;outside=1&amp;thickness=3.0&amp;burn=0.1&amp;format=svg&amp;labels=0&amp;labels=1&amp;reference=100.0&amp;tabs=0.0&amp;qr_code=0&amp;inner_corners=loop&amp;spacing=0.5&amp;debug=0&amp;language=zh_CN&amp;render=2
+SettingsUrl short: https://boxes.hackerspace-bamberg.de/BasedBox?x=150&amp;y=150&amp;h=90&amp;spacing=0.5
+</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="p-4"
+     style="fill:none;stroke-linecap:round;stroke-linejoin:round"
+     transform="translate(-9.9,-167.6)">
+    <path
+       d="M 13.1,254.9 H 22 c 0.1,0 0,-0.1 0,0 v 2.9 c 0,0.055 0.045,0.1 0.1,0.1 h 6 c 0.055,0 0.1,-0.045 0.1,-0.1 v -2.9 c 0,-0.1 -0.1,0 0,0 H 34 c 0.1,0 0,-0.1 0,0 v 2.9 c 0,0.055 0.045,0.1 0.1,0.1 h 6 c 0.055,0 0.1,-0.045 0.1,-0.1 v -2.9 c 0,-0.1 -0.1,0 0,0 H 46 c 0.1,0 0,-0.1 0,0 v 2.9 c 0,0.055 0.045,0.1 0.1,0.1 h 6 c 0.055,0 0.1,-0.045 0.1,-0.1 v -2.9 c 0,-0.1 -0.1,0 0,0 H 58 c 0.1,0 0,-0.1 0,0 v 2.9 c 0,0.055 0.045,0.1 0.1,0.1 h 6 c 0.055,0 0.1,-0.045 0.1,-0.1 v -2.9 c 0,-0.1 -0.1,0 0,0 H 70 c 0.1,0 0,-0.1 0,0 v 2.9 c 0,0.055 0.045,0.1 0.1,0.1 h 6 c 0.055,0 0.1,-0.045 0.1,-0.1 v -2.9 c 0,-87.61052 -0.1,0 0,0 29.31861,-0.44721 81,-37.20982 81,-39 0,-0.1 -182.585915,0 0,0 h 2.9 c 0.055,0 0.1,-0.045 0.1,-0.1 v -6 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -2.9 c -0.1,0 0,0.1 0,0 v -5.8 c 0,-0.1 -0.1,0 0,0 h 2.9 c 0.055,0 0.1,-0.045 0.1,-0.1 v -6 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -2.9 c -0.1,0 0,0.1 0,0 v -5.8 c 0,-0.1 -0.1,0 0,0 h 2.9 c 0.055,0 0.1,-0.045 0.1,-0.1 v -6 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -2.9 c -0.1,0 0,0.1 0,0 v -5.8 c 0,-0.1 -0.1,0 0,0 h 2.9 c 0.055,0 0.1,-0.045 0.1,-0.1 v -9 -3 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -3 -9 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -6 c -0.055,0 -0.1,0.045 -0.1,0.1 v 2.9 c 0,0.1 0.1,0 0,0 h -5.8 c -0.1,0 0,0.1 0,0 v -2.9 c 0,-0.055 -0.045,-0.1 -0.1,-0.1 h -9 -3 c -0.055,0 -0.1,0.045 -0.1,0.1 v 3 9 c 0,0.055 0.045,0.1 0.1,0.1 H 13 c 0.1,0 0,-0.1 0,0 v 5.8 c 0,0.1 0.1,0 0,0 h -2.9 c -0.055,0 -0.1,0.045 -0.1,0.1 v 6 c 0,0.055 0.045,0.1 0.1,0.1 H 13 c 0.1,0 0,-0.1 0,0 v 5.8 c 0,0.1 0.1,0 0,0 h -2.9 c -0.055,0 -0.1,0.045 -0.1,0.1 v 6 c 0,0.055 0.045,0.1 0.1,0.1 H 13 c 0.1,0 0,-0.1 0,0 v 5.8 c 0,0.1 0.1,0 0,0 h -2.9 c -0.055,0 -0.1,0.045 -0.1,0.1 v 6 c 0,0.055 0.045,0.1 0.1,0.1 H 13 c 0.1,0 0,-0.1 0,0 v 5.8 c 0,0.1 0.1,0 0,0 h -2.9 c -0.055,0 -0.1,0.045 -0.1,0.1 v 6 c 0,0.055 0.045,0.1 0.1,0.1 H 13 c 0.1,0 0,-0.1 0,0 v 5.8 c 0,0.1 0.1,0 0,0 h -2.9 c -0.055,0 -0.1,0.045 -0.1,0.1 v 6 c 0,0.055 0.045,0.1 0.1,0.1 H 13 c 0.1,0 0,-0.1 0,0 v 5.8 c 0,0.1 0.1,0 0,0 h -2.9 c -0.055,0 -0.1,0.045 -0.1,0.1 v 9 c 0,0.055 0.045,0.1 0.1,0.1 z"
+       stroke="#000000"
+       stroke-width="0.2"
+       id="path5"
+       sodipodi:nodetypes="csssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssscsscsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssscsscssssssssssssssssssssssssssssssssssssssssssssssssssc" />
+    <circle
+       style="fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-opacity:1"
+       id="path51"
+       cx="70.5"
+       cy="195.10001"
+       r="8.5" />
+    <circle
+       style="stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="path51-9"
+       cx="93.5"
+       cy="195.10001"
+       r="8.5" />
+    <g
+       id="p-2"
+       style="fill:none;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(70.565499,119.94625)">
+      <path
+         d="m 22.97,109.997 c -0.267,0.262 -0.606,0.439 -0.973,0.509 -0.368,0.07 -0.748,0.031 -1.093,-0.114 -0.345,-0.145 -0.639,-0.389 -0.846,-0.7 -0.208,-0.312 -0.318,-0.678 -0.318,-1.052 0,-0.374 0.11,-0.74 0.318,-1.052 0.207,-0.311 0.501,-0.555 0.846,-0.7 0.345,-0.145 0.725,-0.184 1.093,-0.114 0.367,0.07 0.706,0.247 0.973,0.509 -0.019,-0.019 -0.03,-0.044 -0.03,-0.071 v 2.856"
+         stroke="#0000ff"
+         stroke-width="0.2"
+         id="path4" />
+      <path
+         d="m 30.731,109.833 h 0.16 l 0.159,-0.016 0.157,-0.026 0.158,-0.036 0.157,-0.043 0.158,-0.051 0.157,-0.057 0.157,-0.064 0.156,-0.071 0.157,-0.076 0.205,-0.109 0.014,-0.35 0.004,-0.294 -0.004,-0.294 -0.014,-0.35 -0.205,-0.109 -0.157,-0.076 -0.156,-0.071 -0.157,-0.064 -0.157,-0.057 -0.158,-0.051 -0.157,-0.043 -0.158,-0.036 -0.157,-0.026 -0.159,-0.016 h -0.16 l -0.874,0.105 -0.039,-0.27 -0.069,-0.366 -0.086,-0.362 -0.074,-0.262 0.841,-0.259 0.146,-0.065 0.139,-0.08 0.133,-0.088 0.13,-0.097 0.126,-0.103 0.123,-0.111 0.12,-0.116 0.118,-0.122 0.114,-0.128 0.112,-0.134 0.143,-0.182 -0.129,-0.326 -0.116,-0.27 -0.124,-0.268 -0.155,-0.314 -0.232,-0.015 -0.174,-0.007 h -0.171 l -0.17,0.005 -0.167,0.011 -0.164,0.018 -0.161,0.025 -0.159,0.031 -0.155,0.04 -0.151,0.05 -0.147,0.065 -0.755,0.452 -0.145,-0.231 -0.212,-0.306 -0.226,-0.296 -0.174,-0.209 0.663,-0.579 0.107,-0.119 0.094,-0.129 0.086,-0.135 0.079,-0.141 0.073,-0.146 0.068,-0.151 0.062,-0.155 0.058,-0.159 0.052,-0.164 0.048,-0.167 0.057,-0.225 -0.251,-0.245 -0.216,-0.2 -0.221,-0.194 -0.27,-0.224 -0.218,0.08 -0.162,0.065 -0.157,0.07 -0.152,0.073 -0.148,0.079 -0.143,0.083 -0.137,0.088 -0.132,0.093 -0.125,0.1 -0.119,0.107 -0.107,0.119 -0.507,0.72 -0.226,-0.152 -0.318,-0.193 -0.326,-0.179 -0.245,-0.12 0.37,-0.799 0.049,-0.152 0.034,-0.156 0.024,-0.159 0.015,-0.16 0.007,-0.163 10e-4,-0.166 -0.006,-0.167 -0.013,-0.169 -0.018,-0.171 -0.025,-0.172 -0.04,-0.229 -0.328,-0.121 -0.279,-0.095 -0.281,-0.087 -0.337,-0.095 -0.167,0.162 -0.121,0.125 -0.115,0.127 -0.11,0.129 -0.103,0.132 -0.097,0.134 -0.089,0.136 -0.083,0.139 -0.074,0.142 -0.064,0.146 -0.05,0.153 -0.17,0.863 -0.268,-0.046 -0.369,-0.048 -0.371,-0.03 -0.272,-0.01 0.013,-0.881 -0.017,-0.159 -0.033,-0.156 -0.043,-0.154 -0.051,-0.153 -0.06,-0.152 -0.067,-0.151 -0.073,-0.151 -0.08,-0.149 -0.087,-0.149 -0.092,-0.147 -0.13,-0.193 -0.349,0.023 -0.293,0.027 -0.293,0.034 -0.346,0.051 -0.087,0.215 -0.06,0.164 -0.053,0.163 -0.047,0.163 -0.041,0.162 -0.034,0.162 -0.027,0.161 -0.018,0.16 -0.01,0.16 v 0.16 l 0.017,0.159 0.196,0.858 -0.264,0.067 -0.357,0.107 -0.351,0.123 -0.253,0.101 -0.346,-0.809 -0.08,-0.139 -0.093,-0.13 -0.102,-0.123 -0.11,-0.119 -0.116,-0.114 -0.122,-0.111 -0.129,-0.108 -0.134,-0.104 -0.139,-0.1 -0.144,-0.097 -0.197,-0.123 -0.31,0.162 -0.257,0.144 -0.253,0.151 -0.296,0.187 0.009,0.232 0.011,0.173 0.018,0.171 0.023,0.168 0.029,0.165 0.035,0.162 0.041,0.158 0.048,0.154 0.056,0.15 0.065,0.145 0.08,0.139 0.528,0.704 -0.214,0.168 -0.282,0.243 -0.271,0.256 -0.19,0.195 -0.645,-0.599 -0.13,-0.094 -0.138,-0.08 -0.143,-0.071 -0.148,-0.064 -0.153,-0.058 -0.157,-0.051 -0.161,-0.046 -0.164,-0.041 -0.169,-0.035 -0.171,-0.03 -0.23,-0.033 -0.217,0.275 -0.176,0.236 -0.17,0.24 -0.194,0.292 0.102,0.208 0.081,0.154 0.086,0.149 0.089,0.144 0.093,0.139 0.098,0.133 0.102,0.128 0.106,0.121 0.112,0.114 0.12,0.107 0.129,0.094 0.769,0.429 -0.127,0.241 -0.159,0.336 -0.144,0.344 -0.094,0.255 -0.833,-0.284 -0.156,-0.034 -0.159,-0.017 -0.16,-0.007 -0.162,0.002 -0.163,0.01 -0.164,0.017 -0.166,0.023 -0.166,0.03 -0.168,0.036 -0.169,0.043 -0.223,0.063 -0.087,0.34 -0.065,0.287 -0.057,0.288 -0.059,0.346 0.178,0.149 0.137,0.107 0.138,0.101 0.141,0.096 0.141,0.089 0.144,0.082 0.145,0.075 0.146,0.067 0.149,0.059 0.152,0.049 0.157,0.033 0.877,0.079 -0.019,0.272 -0.008,0.372 0.008,0.372 0.019,0.272 -0.877,0.079 -0.157,0.033 -0.152,0.049 -0.149,0.059 -0.146,0.067 -0.145,0.075 -0.144,0.082 -0.141,0.089 -0.141,0.096 -0.138,0.101 -0.137,0.107 -0.178,0.149 0.059,0.346 0.057,0.288 0.065,0.287 0.087,0.34 0.223,0.063 0.169,0.043 0.168,0.036 0.166,0.03 0.166,0.023 0.164,0.017 0.163,0.01 0.162,0.002 0.16,-0.007 0.159,-0.017 0.156,-0.034 0.833,-0.284 0.094,0.255 0.144,0.344 0.159,0.336 0.127,0.241 -0.769,0.429 -0.129,0.094 -0.12,0.107 -0.112,0.114 -0.106,0.121 -0.102,0.128 -0.098,0.133 -0.093,0.139 -0.089,0.144 -0.086,0.149 -0.081,0.154 -0.102,0.208 0.194,0.292 0.17,0.24 0.176,0.236 0.217,0.275 0.23,-0.033 0.171,-0.03 0.169,-0.035 0.164,-0.041 0.161,-0.046 0.157,-0.051 0.153,-0.058 0.148,-0.064 0.143,-0.071 0.138,-0.08 0.13,-0.094 0.645,-0.599 0.19,0.195 0.271,0.256 0.282,0.243 0.214,0.168 -0.528,0.704 -0.08,0.139 -0.065,0.145 -0.056,0.15 -0.048,0.154 -0.041,0.158 -0.035,0.162 -0.029,0.165 -0.023,0.168 -0.018,0.171 -0.011,0.173 -0.009,0.232 0.296,0.187 0.253,0.151 0.257,0.144 0.31,0.162 0.197,-0.123 0.144,-0.097 0.139,-0.1 0.134,-0.104 0.129,-0.108 0.122,-0.111 0.116,-0.114 0.11,-0.119 0.102,-0.123 0.093,-0.13 0.08,-0.139 0.346,-0.809 0.253,0.101 0.351,0.123 0.357,0.107 0.264,0.067 -0.196,0.858 -0.017,0.159 v 0.16 l 0.01,0.16 0.018,0.16 0.027,0.161 0.034,0.162 0.041,0.162 0.047,0.163 0.053,0.163 0.06,0.164 0.087,0.215 0.346,0.051 0.293,0.034 0.293,0.027 0.349,0.023 0.13,-0.193 0.092,-0.147 0.087,-0.149 0.08,-0.149 0.073,-0.151 0.067,-0.151 0.06,-0.152 0.051,-0.153 0.043,-0.154 0.033,-0.156 0.017,-0.159 -0.013,-0.881 0.272,-0.01 0.371,-0.03 0.369,-0.048 0.268,-0.046 0.17,0.863 0.05,0.153 0.064,0.146 0.074,0.142 0.083,0.139 0.089,0.136 0.097,0.134 0.103,0.132 0.11,0.129 0.115,0.127 0.121,0.125 0.167,0.162 0.337,-0.095 0.281,-0.087 0.279,-0.095 0.328,-0.121 0.04,-0.229 0.025,-0.172 0.018,-0.171 0.013,-0.169 0.006,-0.167 -10e-4,-0.166 -0.007,-0.163 -0.015,-0.16 -0.024,-0.159 -0.034,-0.156 -0.049,-0.152 -0.37,-0.799 0.245,-0.12 0.326,-0.179 0.318,-0.193 0.226,-0.152 0.507,0.72 0.107,0.119 0.119,0.107 0.125,0.1 0.132,0.093 0.137,0.088 0.143,0.083 0.148,0.079 0.152,0.073 0.157,0.07 0.162,0.065 0.218,0.08 0.27,-0.224 0.221,-0.194 0.216,-0.2 0.251,-0.245 -0.057,-0.225 -0.048,-0.167 -0.052,-0.164 -0.058,-0.159 -0.062,-0.155 -0.068,-0.151 -0.073,-0.146 -0.079,-0.141 -0.086,-0.135 -0.094,-0.129 -0.107,-0.119 -0.663,-0.579 0.174,-0.209 0.226,-0.296 0.212,-0.306 0.145,-0.231 0.755,0.452 0.147,0.065 0.151,0.05 0.155,0.04 0.159,0.031 0.161,0.025 0.164,0.018 0.167,0.011 0.17,0.005 h 0.171 l 0.174,-0.007 0.232,-0.015 0.155,-0.314 0.124,-0.268 0.116,-0.27 0.129,-0.326 -0.143,-0.182 -0.112,-0.134 -0.114,-0.128 -0.118,-0.122 -0.12,-0.116 -0.123,-0.111 -0.126,-0.103 -0.13,-0.097 -0.133,-0.088 -0.139,-0.08 -0.146,-0.065 -0.841,-0.259 0.074,-0.262 0.086,-0.362 0.069,-0.366 0.039,-0.27 z"
+         stroke="#000000"
+         stroke-width="0.2"
+         id="path5-9" />
+    </g>
+  </g>
+</svg>
